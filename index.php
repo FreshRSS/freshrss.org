@@ -22,7 +22,7 @@
 		<div class="grid2-1">
 			<div class="mod title">
 				<h1><a href="/"><img class="logo" width="300" height="150" src="./img/freshrss_logo.png" alt="FreshRSS" /></a></h1>
-				<p class="tagline"><a href="/">A free, self-hostable aggregator… probably the best! <small>(according to myself)</small></a></p>
+				<p class="tagline"><a href="/">A free, self-hostable aggregator… probably the best! <small>(in my opinion)</small></a></p>
 			</div>
 			<div class="mod support">
 				<p>You are awesome!</p>
