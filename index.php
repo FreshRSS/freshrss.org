@@ -96,14 +96,14 @@
 					</tr>
 					<tr>
 						<td class="txtright">PHP</td>
-						<td><strong>PHP 5.3.3+</strong></td>
+						<td><strong>PHP 5.3.7+</strong></td>
 						<td>PHP 5.2+</td>
 					</tr>
 					<tr>
 						<td class="txtright">PHP modules</td>
 						<td>
-							<p>Required: <a href="http://php.net/xml">libxml</a>, <a href="http://php.net/curl">cURL</a> and <a href="http://php.net/pdo-mysql">PDO_MySQL</a></p>
-							<p>Recommended: <a href="http://php.net/zlib">Zlib</a>, <a href="http://php.net/mbstring">mbstring</a>, <a href="http://php.net/iconv">iconv</a></p>
+							<p>Required: <a href="http://php.net/xml">libxml</a>, <a href="http://php.net/curl">cURL</a>, <a href="http://php.net/pdo-mysql">PDO_MySQL</a>, <a href="http://fr2.php.net/pcre">PCRE</a> and <a href="http://fr2.php.net/ctype">ctype</a></p>
+							<p>Recommended: <a href="http://fr2.php.net/json">JSON</a>, <a href="http://php.net/zlib">Zlib</a>, <a href="http://php.net/mbstring">mbstring</a>, <a href="http://php.net/iconv">iconv</a></p>
 						</td>
 						<td>
 
@@ -112,7 +112,7 @@
 					<tr>
 						<td class="txtright">Database</td>
 						<td><strong>MySQL 5.0.3+</strong></td>
-						<td>SQLite (soon)</td>
+						<td>SQLite 3.7.4+ (soon)</td>
 					</tr>
 					<tr>
 						<td class="txtright">Web browser</td>
