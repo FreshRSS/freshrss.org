@@ -102,8 +102,8 @@
 					<tr>
 						<td class="txtright">PHP modules</td>
 						<td>
-							<p>Required : <a href="http://php.net/xml">libxml</a>, <a href="http://php.net/curl">cURL</a> and <a href="http://php.net/pdo-mysql">PDO_MySQL</a></p>
-							<p>Recommanded : <a href="http://php.net/zlib">Zlib</a>, <a href="http://php.net/mbstring">mbstring</a>, <a href="http://php.net/iconv">iconv</a></p>
+							<p>Required: <a href="http://php.net/xml">libxml</a>, <a href="http://php.net/curl">cURL</a> and <a href="http://php.net/pdo-mysql">PDO_MySQL</a></p>
+							<p>Recommended: <a href="http://php.net/zlib">Zlib</a>, <a href="http://php.net/mbstring">mbstring</a>, <a href="http://php.net/iconv">iconv</a></p>
 						</td>
 						<td>
 
