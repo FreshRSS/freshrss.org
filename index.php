@@ -128,7 +128,7 @@
 			<div class="mod">
 				<h2><a href="http://doc.freshrss.org/doku.php?id=en:users">Read the documentation</a></h2>
 				<a href="http://doc.freshrss.org/doku.php?id=en:users"><img width="150" height="150" src="img/doc.png" alt="documentation" /></a>
-				<p>The documentation is your best friend. I guess the answer you are searching is already in!</p>
+				<p>The documentation is your best friend. I guess the answer you are searching is already in!<br />(still under construction)</p>
 			</div>
 			<div class="mod">
 				<h2><a href="https://github.com/marienfressinaud/FreshRSS/issues">Report a bug</a></h2>
@@ -149,12 +149,12 @@
 				<p>Made by <a href="http://marienfressinaud.fr">Marien Fressinaud</a> and <a href="https://github.com/marienfressinaud/FreshRSS/graphs/contributors">amazing contributors</a>.</p>
 				<p>Code licensed under <a href="https://www.gnu.org/licenses/agpl-3.0.html">AGPL</a>.</p>
 				<p>Hosted by <a href="http://ovh.com">OVH</a>.</p>
-				<p>This site uses <a href="http://knacss.com/">KNACSS</a> and <a href="https://git.gnome.org/browse/gnome-icon-theme-symbolic">GNOME icons</a>.</p>
+				<p>This site uses <a href="http://knacss.com/">KNACSS</a> and <a href="http://ftp.gnome.org/pub/GNOME/sources/gnome-icon-theme-symbolic/">GNOME icons</a>.</p>
 			</div>
 
 			<div>
 				<p>FreshRSS does not correspond to your attempts?<br />
-				<a href="http://waah.info/doku.php/flux_rss">Have a look to some alternatives</a> (in French, sorry)</p>
+				<a href="http://alternativeto.net/software/freshrss/">Have a look to some alternatives</a></p>
 			</div>
 		</div>
 	</footer>
