@@ -54,6 +54,7 @@
 				<p><a class="btn demo" href="http://demo.freshrss.org">Give it a try</a></p>
 				<p>or</p>
 				<p><a href="http://doc.freshrss.org/doku.php?id=en:developers">Learn more about the source code</a></p>
+				<p><a href="https://github.com/marienfressinaud/FreshRSS"><img width="32" height="32" src="img/github.png" alt="Icon of Github" /></a></p>
 			</div>
 		</section>
 
@@ -92,7 +93,7 @@
 					<tr>
 						<td class="txtright">Web server</td>
 						<td><strong>Apache2</strong></td>
-						<td>Nginx</td>
+						<td>Nginx, Lighttpd</td>
 					</tr>
 					<tr>
 						<td class="txtright">PHP</td>
@@ -102,8 +103,8 @@
 					<tr>
 						<td class="txtright">PHP modules</td>
 						<td>
-							<p>Required: <a href="http://php.net/xml">libxml</a>, <a href="http://php.net/curl">cURL</a>, <a href="http://php.net/pdo-mysql">PDO_MySQL</a>, <a href="http://fr2.php.net/pcre">PCRE</a> and <a href="http://fr2.php.net/ctype">ctype</a></p>
-							<p>Recommended: <a href="http://fr2.php.net/json">JSON</a>, <a href="http://php.net/zlib">Zlib</a>, <a href="http://php.net/mbstring">mbstring</a>, <a href="http://php.net/iconv">iconv</a></p>
+							<p>Required: <a href="http://php.net/xml">libxml</a>, <a href="http://php.net/curl">cURL</a>, <a href="http://php.net/pdo-mysql">PDO_MySQL</a> or <a href="http://php.net/pdo-sqlite">PDO_SQLite</a>, <a href="http://php.net/gmp">GMP</a></p>
+							<p>Recommended: <a href="http://fr2.php.net/json">JSON</a>, <a href="http://php.net/zlib">Zlib</a>, <a href="http://php.net/mbstring">mbstring</a>, <a href="http://php.net/iconv">iconv</a>, <a href="http://php.net/zip">Zip</a></p>
 						</td>
 						<td>
 
@@ -112,7 +113,7 @@
 					<tr>
 						<td class="txtright">Database</td>
 						<td><strong>MySQL 5.0.3+</strong></td>
-						<td>SQLite 3.7.4+ (soon)</td>
+						<td>SQLite 3.7.4+</td>
 					</tr>
 					<tr>
 						<td class="txtright">Web browser</td>
