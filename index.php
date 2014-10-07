@@ -154,11 +154,34 @@
 
 			<div>
 				<p>FreshRSS does not correspond to your attempts?<br />
-				<a href="http://alternativeto.net/software/freshrss/">Have a look to some alternatives</a></p>
+				<noscript><a href="http://alternativeto.net/software/freshrss/">Have a look to some alternatives</a></noscript>
+				<span id="a2itemwidget"></span></p>
 			</div>
 		</div>
 	</footer>
 
 	<script type="text/javascript" async="true" src="http://api.flattr.com/js/0.6/load.js?mode=auto"></script>
+	<script type="text/javascript" async="true" src="scripts/jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+	function init_widget() {
+		if (!window.$) {
+			if (window.console) {
+				console.log('Waiting for JS…');
+			}
+			window.setTimeout(init_widget, 100);
+			return;
+		}
+
+		$(function () {
+			$.getJSON('http://api.alternativeto.net/software/freshrss/widget/blue/?jsoncallback=?',
+				function (json) {
+					//doucment.write(json.Widget);
+					$('#a2itemwidget').html(json.Widget);
+				}
+			);
+		});
+	}
+	init_widget();
+</script>
 </body>
 </html>
