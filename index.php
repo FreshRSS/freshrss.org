@@ -1,3 +1,6 @@
+<?php
+define('FRESHRSS_REPOSITORY', 'https://github.com/FreshRSS/FreshRSS');
+?>
 <!doctype html>
 <!--[if lte IE 7]> <html class="no-js ie67 ie678" lang="en"> <![endif]-->
 <!--[if IE 8]> <html class="no-js ie8 ie678" lang="en"> <![endif]-->
@@ -26,7 +29,7 @@
 			</div>
 			<div class="mod support">
 				<p>You are awesome!</p>
-				<p><a class="FlattrButton" href="http://github.com/marienfressinaud/FreshRSS">Flattr it!</a></p>
+				<p><a class="FlattrButton" href="<?php echo FRESHRSS_REPOSITORY ?>">Flattr it!</a></p>
 			</div>
 		</div>
 	</header>
@@ -36,7 +39,7 @@
 			$next_version = trim(file_get_contents('version.txt'));
 	?>
 	<div id="ribbon">
-		<p><a target="_blank" href="https://github.com/marienfressinaud/FreshRSS/issues/327">Try the <?php echo $next_version; ?>!</a></p>
+		<p><a target="_blank" href="<?php echo FRESHRSS_REPOSITORY ?>/issues/327">Try the <?php echo $next_version; ?>!</a></p>
 	</div>
 	<?php
 		}
@@ -49,12 +52,12 @@
 				<img width="600" height="400" src="./img/screenshot.png" alt="FreshRSS" />
 			</div>
 			<div class="mod download">
-				<p><a class="btn important icon icon-dl" href="https://github.com/marienfressinaud/FreshRSS/archive/master.zip">Download</a><br /><small>(<a href="https://www.gnu.org/licenses/agpl-3.0.html">it's free and always will be</a>)</small></p>
+				<p><a class="btn important icon icon-dl" href="<?php echo FRESHRSS_REPOSITORY ?>/archive/master.zip">Download</a><br /><small>(<a href="https://www.gnu.org/licenses/agpl-3.0.html">it's free and always will be</a>)</small></p>
 				<p>or</p>
 				<p><a class="btn demo" href="http://demo.freshrss.org">Give it a try</a></p>
 				<p>or</p>
 				<p><a href="http://doc.freshrss.org/doku.php?id=en:developers">Learn more about the source code</a></p>
-				<p><a href="https://github.com/marienfressinaud/FreshRSS"><img width="32" height="32" src="img/github.png" alt="Icon of Github" /></a></p>
+				<p><a href="<?php echo FRESHRSS_REPOSITORY ?>"><img width="32" height="32" src="img/github.png" alt="Icon of Github" /></a></p>
 			</div>
 		</section>
 
@@ -132,8 +135,8 @@
 				<p>The documentation is your best friend. I guess the answer you are searching is already in!<br />(still under construction)</p>
 			</div>
 			<div class="mod">
-				<h2><a href="https://github.com/marienfressinaud/FreshRSS/issues">Report a bug</a></h2>
-				<a href="https://github.com/marienfressinaud/FreshRSS/issues"><img width="150" height="150" src="img/bug.png" alt="bug" /></a>
+				<h2><a href="<?php echo FRESHRSS_REPOSITORY ?>/issues">Report a bug</a></h2>
+				<a href="<?php echo FRESHRSS_REPOSITORY ?>/issues"><img width="150" height="150" src="img/bug.png" alt="bug" /></a>
 				<p>Oh crap! FreshRSS has crashed? Maybe the bug is already known… or maybe not. Have a look to the bug tracker and do not hesitate to open a new issue.</p>
 			</div>
 			<div class="mod">
@@ -147,7 +150,7 @@
 	<footer id="footer" role="contentinfo" class="grid">
 		<div class="grid2-1">
 			<div>
-				<p>Made by <a href="http://marienfressinaud.fr">Marien Fressinaud</a> and <a href="https://github.com/marienfressinaud/FreshRSS/graphs/contributors">amazing contributors</a>.</p>
+				<p>Made by <a href="<?php echo FRESHRSS_REPOSITORY ?>/graphs/contributors">amazing contributors</a>.</p>
 				<p>Code licensed under <a href="https://www.gnu.org/licenses/agpl-3.0.html">AGPL</a>.</p>
 				<p>Hosted by <a href="http://ovh.com">OVH</a>.</p>
 				<p>This site uses <a href="http://knacss.com/">KNACSS</a> and <a href="http://ftp.gnome.org/pub/GNOME/sources/gnome-icon-theme-symbolic/">GNOME icons</a>.</p>
