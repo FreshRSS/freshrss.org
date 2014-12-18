@@ -81,7 +81,7 @@ define('FRESHRSS_REPOSITORY', 'https://github.com/FreshRSS/FreshRSS');
 
 		<div class="requirements-title row"><h1>Requirements</h1></div>
 		<div class="requirements line txtcenter">
-			<p class="left">You are convinced by FreshRSS but you do not know what you need? Keep calm and have a look to the following table:</p>
+			<p class="left">You are convinced by FreshRSS but you do not know what you need? Keep calm and have a look at the following table:</p>
 
 			<table class="alternate striped-vert">
 				<caption>Software basis for FreshRSS</caption>
@@ -137,7 +137,7 @@ define('FRESHRSS_REPOSITORY', 'https://github.com/FreshRSS/FreshRSS');
 			<div class="mod">
 				<h2><a href="<?php echo FRESHRSS_REPOSITORY ?>/issues">Report a bug</a></h2>
 				<a href="<?php echo FRESHRSS_REPOSITORY ?>/issues"><img width="150" height="150" src="img/bug.png" alt="bug" /></a>
-				<p>Oh crap! FreshRSS has crashed? Maybe the bug is already known… or maybe not. Have a look to the bug tracker and do not hesitate to open a new issue.</p>
+				<p>Oh crap! FreshRSS has crashed? Maybe the bug is already known… or maybe not. Have a look at the bug tracker and do not hesitate to open a new issue.</p>
 			</div>
 			<div class="mod">
 				<h2><a href="mailto:dev@marienfressinaud.fr">Send me an email</a></h2>
@@ -157,8 +157,8 @@ define('FRESHRSS_REPOSITORY', 'https://github.com/FreshRSS/FreshRSS');
 			</div>
 
 			<div>
-				<p>FreshRSS does not correspond to your attempts?<br />
-				<noscript><a href="http://alternativeto.net/software/freshrss/">Have a look to some alternatives</a></noscript>
+				<p>FreshRSS does not meet your expectations?<br />
+				<noscript><a href="http://alternativeto.net/software/freshrss/">Have a look at some alternatives</a></noscript>
 				<span id="a2itemwidget"></span></p>
 			</div>
 		</div>
