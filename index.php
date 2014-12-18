@@ -157,7 +157,7 @@ define('FRESHRSS_REPOSITORY', 'https://github.com/FreshRSS/FreshRSS');
 			</div>
 
 			<div>
-				<p>FreshRSS does not correspond to your attempts?<br />
+				<p>FreshRSS does not meet your expectations?<br />
 				<noscript><a href="http://alternativeto.net/software/freshrss/">Have a look to some alternatives</a></noscript>
 				<span id="a2itemwidget"></span></p>
 			</div>
