@@ -1,5 +1,6 @@
 <?php
 define('FRESHRSS_REPOSITORY', 'https://github.com/FreshRSS/FreshRSS');
+define('FRESHRSS_FLATTR_REPOSITORY', 'https://github.com/marienfressinaud/FreshRSS');
 ?>
 <!doctype html>
 <!--[if lte IE 7]> <html class="no-js ie67 ie678" lang="en"> <![endif]-->
@@ -29,7 +30,7 @@ define('FRESHRSS_REPOSITORY', 'https://github.com/FreshRSS/FreshRSS');
 			</div>
 			<div class="mod support">
 				<p>You are awesome!</p>
-				<p><a class="FlattrButton" href="<?php echo FRESHRSS_REPOSITORY ?>">Flattr it!</a></p>
+				<p><a class="FlattrButton" href="<?php echo FRESHRSS_FLATTR_REPOSITORY ?>">Flattr it!</a></p>
 			</div>
 		</div>
 	</header>
