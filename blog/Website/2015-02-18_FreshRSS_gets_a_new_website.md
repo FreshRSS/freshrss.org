@@ -1,4 +1,4 @@
-Title: FreshRSS get a new website
+Title: FreshRSS gets a new website
 Date: 2015-02-18
 Authors: Marien
 
