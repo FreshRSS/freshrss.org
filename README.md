@@ -6,9 +6,9 @@ freshrss.org uses [Pelican](http://getpelican.com/) as static site generator. It
 
 This repository only contains raw content (in Markdown) and does not host FreshRSS theme.
 
-Actually, there is only one content file: `./pages/index.html`. Yes, it is HTML. It is the home page content of freshrss.org and is very specific.
+Actually, there is one specific file: `./pages/index.html`. Yes, it is HTML (and not Markdown). It is the home page content of freshrss.org.
 
-The blog is not yet supported by FreshRSS Pelican theme so blog posts are not present yet. Blog posts will be written in Markdown under a `./blog` directory.
+Blog posts are written in Markdown under the `./blog` directory.
 
 ## Installation
 
@@ -39,7 +39,7 @@ Pelican will ask you some information. Here are what is suggested but you can ad
 - Generate Fabfile/Makefile: yes
 - simpleHTTP script: yes
 
-Finally, it will ask you which tools to use to upload your website: the choice is in your hands but SSH is recommended (it provides `scp` and `rsync` upload).
+Finally, it will ask you which tools to use to upload your website: the choice is in your hands but SSH is recommended (it provides `scp` and `rsync` uploads).
 
 We have now to adapt configuration from the `./pelicanconf.py` file:
 
@@ -64,13 +64,21 @@ STATIC_PATHS = (
 
 ARTICLE_PATHS = ['blog']
 
+INDEX_SAVE_AS = 'blog.html'
+
+LOCALE = (
+    'en_GB',
+)
+
 # Specific to FreshRSS theme
-SITELOGO = 'http://freshrss.org/img/freshrss_logo.png'
+SITELOGO = '/images/freshrss_logo.png'
 SITEINFOS = '''
 <p>Made by <a href="https://github.com/FreshRSS/FreshRSS/graphs/contributors">amazing contributors</a>.</p>
 <p>Code licensed under <a href="https://www.gnu.org/licenses/agpl-3.0.html">AGPL</a>.</p>
 <p>Hosted by <a href="http://ovh.com">OVH</a>.</p>
-<p>This site uses <a href="http://knacss.com/">KNACSS</a> and <a href="http://ftp.gnome.org/pub/GNOME/sources/gnome-icon-theme-symbolic/">GNOME icons</a>.</p>
+<p>This site uses <a href="http://knacss.com/">KNACSS</a>, <a href="http://ftp.gnome.org/pub/GNOME/sources/gnome-icon-theme-symbolic/">GNOME icons</a> and <a href="https://icomoon.io/">Icomoon icons</a>.<br /><br /></p>
+<p>You can contribute to this website <a href="https://github.com/FreshRSS/freshrss.org">on GitHub</a>.</p>
+<p>Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.</p>
 '''
 SOFTWARE = 'FreshRSS'
 
