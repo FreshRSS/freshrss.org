@@ -14,4 +14,4 @@ As you may notice, there is no possibility to comment directly our articles: we 
 
 Since we want to adopt a “community-friendly” process, you will have the possibility to modify and/or write articles in order to be published here. If you want to contribute to this blog, please fork [the project on GitHub](https://github.com/FreshRSS/freshrss.org), create a new branch, write your article and send a pull request. The only condition will be that you must speak about RSS/Atom aggregation :).
 
-To finish, stay in touch with us since there are still some great news to come in the next days!
+To finish, stay in touch with us since there are still some great news to come in the next few days!
