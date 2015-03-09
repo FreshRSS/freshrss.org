@@ -31,13 +31,13 @@ $ pelican-quickstart
 Pelican will ask you some information. Here are what is suggested but you can adapt to your own case:
 
 - Creation path: current path is ok
-- Website title: FreshRSS, a free, self-hostable aggregator…
-- Website author: Community
-- Default language: en
-- URL prefix: http://freshrss.org (or you can adapt)
-- Articles per page (consider pagination is enabled): 10
-- Generate Fabfile/Makefile: yes
-- simpleHTTP script: yes
+- Website title: `FreshRSS, a free, self-hostable aggregator…`
+- Website author: `Community`
+- Default language: `en`
+- URL prefix: `//freshrss.org` (you can adapt but please consider to not precise `http:` nor `https:` in order to be compliant with both protocols)
+- Articles per page (consider pagination is enabled): `10`
+- Generate Fabfile/Makefile: `yes`
+- simpleHTTP script: `yes`
 
 Finally, it will ask you which tools to use to upload your website: the choice is in your hands but SSH is recommended (it provides `scp` and `rsync` uploads).
 
