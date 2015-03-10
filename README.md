@@ -66,6 +66,11 @@ ARTICLE_PATHS = ['blog']
 
 INDEX_SAVE_AS = 'blog.html'
 
+# To avoid conflicts between "community" author and category feeds.
+# We don't use author feed anyway in the template.
+AUTHOR_FEED_ATOM = None
+AUTHOR_FEED_RSS = None
+
 LOCALE = (
     'en_GB',
 )
