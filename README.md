@@ -34,7 +34,7 @@ Pelican will ask you some information. Here are what is suggested but you can ad
 - Website title: `FreshRSS, a free, self-hostable aggregator…`
 - Website author: `Community`
 - Default language: `en`
-- URL prefix: `//freshrss.org` (you can adapt but please consider to not precise `http:` nor `https:` in order to be compliant with both protocols)
+- URL prefix: `https://freshrss.org`
 - Articles per page (consider pagination is enabled): `10`
 - Generate Fabfile/Makefile: `yes`
 - simpleHTTP script: `yes`
@@ -71,6 +71,13 @@ INDEX_SAVE_AS = 'blog.html'
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+# Disable non-skined pages
+TAGS_SAVE_AS = ''
+TAG_SAVE_AS = ''
+CATEGORIES_SAVE_AS = ''
+ARCHIVES_SAVE_AS = ''
+AUTHORS_SAVE_AS = ''
+
 LOCALE = (
     'en_GB',
 )
@@ -86,7 +93,7 @@ SITEINFOS = '''
 <p>Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.</p>
 '''
 SOFTWARE = 'FreshRSS'
-
+TWITTER = 'https://twitter.com/FreshRSS'
 ```
 
 We have nearly finished! All we need now is the FreshRSS theme (Freshican) and... the content (this repository!).
