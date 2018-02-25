@@ -41,6 +41,10 @@ AddDefaultCharset	UTF-8
 	</FilesMatch>
 </IfModule>
 
+<IfModule mod_alias.c>
+	Redirect temp "/feeds/all.atom.xml" "https://github.com/FreshRSS/FreshRSS/releases.atom"
+</IfModule>
+
 <Files "favicon.ico">
 	Order	Deny,Allow
 	Allow	from all
