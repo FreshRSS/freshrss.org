@@ -18,16 +18,19 @@ Blog posts are written in Markdown under the `./blog` directory.
 
 We assume in this section you have Docker installed on your system.
 
-Build the image with:
+If you want to (an image is provided on the Docker registry), you can build the
+image with:
 
 ```console
-$ docker build -t freshrss-pelican .
+$ docker build -t freshrss/freshrss-org .
 ```
 
 And generate the output with:
 
 ```console
-$ docker run --rm -v "$PWD:/pelican" --user $(id -u):$(id -g) freshrss-pelican
+$ mkdir output
+$ docker run --rm -v "$PWD/output:/pelican/output" --user $(id -u):$(id -g) freshrss/freshrss-pelican
 ```
 
-You should now see a `./output` directory that you can upload on a server.
+You should now see HTML files under `./output` directory that you can upload
+on a server.
