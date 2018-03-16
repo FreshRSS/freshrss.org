@@ -12,7 +12,7 @@ to help to build the website.
 Actually, there is one specific file: `./content/pages/index.html`. Yes, it is
 HTML (and not Markdown). It is the home page content of freshrss.org.
 
-Blog posts are written in Markdown under the `./blog` directory.
+Blog posts are written in Markdown under the `./content/blog` directory.
 
 ## Installation
 
@@ -29,7 +29,7 @@ And generate the output with:
 
 ```console
 $ mkdir output
-$ docker run --rm -v "$PWD/output:/pelican/output" --user $(id -u):$(id -g) freshrss/freshrss-pelican
+$ docker run --rm -v "$PWD/output:/pelican/output" --user $(id -u):$(id -g) freshrss/freshrss-org
 ```
 
 You should now see HTML files under `./output` directory that you can upload
