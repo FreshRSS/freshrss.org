@@ -2,10 +2,12 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
+import os
+
 AUTHOR = u'Community'
 SITENAME = u'FreshRSS, a free, self-hostable aggregator…'
 SITESUBTITLE = 'A free, self-hostable aggregator… probably the best! <small>(in our opinion)</small>'
-SITEURL = 'https://freshrss.org'
+SITEURL = os.getenv('SITEURL', 'https://freshrss.org')
 
 PATH = 'content'
 

@@ -33,4 +33,10 @@ $ docker run --rm -v "$PWD/output:/pelican/output" --user $(id -u):$(id -g) fres
 ```
 
 You should now see HTML files under `./output` directory that you can upload
-on a server.
+on a server. The website is generated with the `https://freshrss.org` URL by
+default. You can override this value by setting the `SITEURL` environment
+variable:
+
+```console
+$ docker run --rm -v "$PWD/output:/pelican/output" --user $(id -u):$(id -g) -e "SITEURL=http://127.0.0.1:8080" freshrss/freshrss-org
+```
