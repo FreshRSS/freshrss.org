@@ -1,0 +1,22 @@
+{% extends "__base.html" %}
+
+{% block title %}{{ article.title|striptags }} – {{ SITENAME }}{% endblock %}
+
+{% block content %}
+
+<div>
+    <a href="{{ SITEURL }}/blog.html"><span class="icon-arrow-left2"></span> Go back to the blog</a>
+</div>
+
+<section class="article">
+    <article>
+        {% include "_article_details.html" %}
+
+        <div class="entry-content">
+            {{ article.content }}
+        </div>
+
+        {% include "_article_comments.html" %}
+    </article>
+</section>
+{% endblock %}

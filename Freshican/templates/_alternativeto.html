@@ -1,0 +1,23 @@
+{% if SOFTWARE %}
+    <script type="text/javascript" async="true" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript">
+        function init_widget() {
+            if (!window.$) {
+                if (window.console) {
+                    console.log('Waiting for JS…');
+                }
+                window.setTimeout(init_widget, 100);
+                return;
+            }
+
+            $(function () {
+                $.getJSON('http://api.alternativeto.net/software/{{ SOFTWARE }}/widget/blue/?jsoncallback=?',
+                    function (json) {
+                        $('#a2itemwidget').html(json.Widget);
+                    }
+                );
+            });
+        }
+        init_widget();
+    </script>
+{% endif %}

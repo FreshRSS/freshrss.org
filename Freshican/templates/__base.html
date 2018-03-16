@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        {% block meta %}
+            <meta charset="utf-8">
+        {% endblock %}
+        <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
+        {% block stylesheets %}
+            <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/knacss.css" />
+            <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/icomoon.css" />
+            <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/main.css" />
+        {% endblock %}
+        {% block extra_head %}
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% endblock %}
+        {% include "_feeds.html" %}
+    </head>
+    <body class="mw960p center">
+        <header role="banner" class="header grid">
+            {% include "_header.html" %}
+        </header>
+
+        <div id="main" class="grid pam {{ page_name }}" role="main">
+            {% block content %}
+            {% endblock %}
+        </div>
+
+        <footer id="footer" role="contentinfo" class="grid">
+            {% include "_footer.html" %}
+        </footer>
+
+        {% include '_analytics.html' %}
+        {% include '_alternativeto.html' %}
+        {% include '_smooth_scroll.html' %}
+    </body>
+</html>
