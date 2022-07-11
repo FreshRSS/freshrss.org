@@ -1,0 +1,9 @@
+url: "https://freshrss.org"
+title: "FreshRSS"
+author: "FreshRSS community"
+timezone: "Europe/Paris"
+uuid: "900424a6-836f-5547-b722-c2130f86d910"
+twitter: "@freshrss"
+
+development:
+  url: "filesystem"

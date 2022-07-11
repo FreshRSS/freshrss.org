@@ -1,6 +1,9 @@
+---
 Title: Announce of the mailing lists
-Date: 2015-03-11
+Date: 2015-03-11 00:00
 Comments_at: https://github.com/FreshRSS/freshrss.org/issues/21
+Slug: announce-of-the-mailing-lists
+---
 
 Did you know that FreshRSS has two mailing lists since few weeks?
 

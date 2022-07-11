@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1.0" />
+        <link rel="canonical" href="{{ SITE_URL }}{{ PAGE_SLUG }}.html">
+        <link href="https://github.com/FreshRSS/FreshRSS/releases.atom" type="application/atom+xml" rel="alternate" title="FreshRSS Releases" />
+
+        <link rel="stylesheet" href="{{ SITE_URL }}/style.css" />
+
+        {% if 'PAGE_TITLE' in globals() %}
+            <title>{{ PAGE_TITLE }} – {{ SITE_TITLE }}</title>
+            <meta property="og:title" content="{{ PAGE_TITLE }}" />
+        {% else %}
+            <title>FreshRSS, a free, self-hostable feeds aggregator</title>
+            <meta property="og:title" content="FreshRSS, a free, self-hostable feeds aggregator" />
+        {% endif %}
+
+        {% if 'PAGE_DESCRIPTION' in globals() %}
+            <meta name="description" content="{{ PAGE_DESCRIPTION }}" />
+            <meta property="og:description" content="{{ PAGE_DESCRIPTION }}" />
+        {% endif %}
+
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="en_GB" />
+        <meta property="og:url" content="{{ SITE_URL }}{{ PAGE_SLUG }}.html" />
+        <meta name="twitter:site" content="{{ SITE_TWITTER }}">
+        {% if 'PAGE_ILLUSTRATION' in globals() %}
+            <meta property="og:image" content="{{ SITE_URL }}{{ PAGE_ILLUSTRATION }}" />
+        {% else %}
+            <meta property="og:image" content="{{ SITE_URL }}card.png" />
+        {% endif %}
+        <meta name="twitter:card" content="summary">
+    </head>
+
+    <body>
+        {{ PAGE_CONTENT }}
+    </body>
+</html>

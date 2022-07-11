@@ -1,6 +1,9 @@
+---
 Title: FreshRSS supports PubSubHubbub
-Date: 2015-07-30
+Date: 2015-07-30 00:00
 Comments_at: https://github.com/FreshRSS/freshrss.org/issues/28
+Slug: freshrss-supports-pubsubhubbub
+---
 
 We just released FreshRSS 1.1.2-beta which comes with some nice features such as the possibility to create account for anonymous users, proxy configuration and… **PubSubHubbub support**!
 

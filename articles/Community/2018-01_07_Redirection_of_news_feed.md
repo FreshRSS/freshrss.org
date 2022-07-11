@@ -1,5 +1,8 @@
+---
 Title: Redirection of news feed
-Date: 2018-01-07
+Date: 2018-01-07 00:00
+Slug: redirection-of-news-feed
+---
 
 It's not always simple to animate a project, especially to write articles to
 keep the community aware of what's new. It's been more than 2 years since the
