@@ -1,0 +1,18 @@
+<svg width="262" height="220" data-name="Layer 1" version="1.1" viewBox="0 0 262 220" xmlns="http://www.w3.org/2000/svg">
+ <title>server_cluster</title>
+ <rect transform="rotate(90)" x="99.401" y="-228.5" width="20" height="195" fill="#96c7f2" stroke-width=".27629"/>
+ <g transform="translate(-313,-491.81)" fill="#b7d9f8">
+  <rect x="313" y="491.81" width="262" height="104"/>
+  <rect x="313" y="607.81" width="262" height="104"/>
+ </g>
+ <g transform="translate(-313,-491.81)" fill="#96c7f2">
+  <rect x="313" y="535.9" width="262" height="16"/>
+  <rect x="313" y="651.9" width="262" height="16"/>
+  <circle cx="524" cy="504.81" r="6"/>
+  <circle cx="545" cy="504.81" r="6"/>
+  <circle cx="566" cy="504.81" r="6"/>
+  <circle cx="524" cy="618.81" r="6"/>
+  <circle cx="545" cy="618.81" r="6"/>
+  <circle cx="566" cy="618.81" r="6"/>
+ </g>
+</svg>

@@ -1,101 +1,256 @@
-<section class="presentation grid2-1" id="presentation">
-    <div class="mod screenshot">
-        <img width="600" height="400" src="images/screenshot.png" alt="FreshRSS" />
-    </div>
-    <div class="mod download">
-        <p><a class="btn important" href="https://github.com/FreshRSS/FreshRSS/releases/latest"><span class="icon-download"></span> Download</a><br /><small>(<a href="https://www.gnu.org/licenses/agpl-3.0.html">it's free and always will be</a>)</small></p>
-        <p>or</p>
-        <p><a class="btn demo" href="http://demo.freshrss.org">Give it a try</a></p>
-        <p>or</p>
-        <p><a href="https://github.com/FreshRSS/FreshRSS"><img width="32" height="32" src="images/github.png" alt="Icon of Github" /></a></p>
-    </div>
-</section>
+---
+description: FreshRSS is lightweight, easy to work with, powerful, and customizable.
+---
 
-<section class="overview grid3">
-    <div class="mod">
-        <h2>Fast</h2>
-        <img width="150" height="150" src="images/fast.png" alt="FreshRSS is fast" />
-        <p>FreshRSS can manage +100k articles without complaining.</p>
-    </div>
-    <div class="mod">
-        <h2>Responsive</h2>
-        <img width="150" height="150" src="images/mobile.png" alt="FreshRSS works on mobile" />
-        <p>Read your RSS feeds on your mobile without requiring any third-party application.</p>
-    </div>
-    <div class="mod">
-        <h2>Self hostable</h2>
-        <img width="150" height="150" src="images/server.png" alt="FreshRSS is yours" />
-        <p>Your data is yours! Host your aggregator and do not depend on anyone.</p>
-    </div>
-</section>
+<div class="site__block wrapper-large edge-gap flow-large">
+    <div class="site__intro text-featured wrapper-text flow">
+        <p>
+            <strong>FreshRSS is a self-hosted <abbr>RSS</abbr> and Atom feed aggregator.</strong><br>
+            It is lightweight, easy to work with, powerful, and customizable.
+        </p>
 
-<div class="requirements-title row"><h1 id="requirements">Requirements</h1></div>
-<div class="requirements line txtcenter">
-    <p class="left">You are convinced by FreshRSS but you do not know what you need? Keep calm and have a look at the following table:</p>
+        <div class="ten-years flow wrapper-small">
+            <p><strong>🎂 Happy birthday</strong></p>
+            <p>
+                FreshRSS turns 10 this year.<br>
+                We’re very proud to be there today,<br>
+                <a href="#">let’s celebrate together!</a>
+            </p>
+        </div>
+    </div>
 
-    <table class="alternate striped-vert">
-        <caption>FreshRSS 1.10 requirements</caption>
-        <thead>
-            <tr>
-                <th class="txtright" scope="col">Software</th>
-                <th scope="col">Recommended</th>
-                <th scope="col">Works also with</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="txtright">Web server</td>
-                <td><strong>Apache2</strong></td>
-                <td>Nginx, Lighttpd</td>
-            </tr>
-            <tr>
-                <td class="txtright">PHP</td>
-                <td><strong>PHP 7+</strong></td>
-                <td>older PHP versions*: 5.6+</td>
-            </tr>
-            <tr>
-                <td class="txtright">PHP modules</td>
-                <td>
-                    <p>Required: <a href="http://php.net/xml">libxml</a>, <a href="http://php.net/curl">cURL</a>, <a href="http://php.net/dom">DOM</a> <a href="http://php.net/pdo-mysql">PDO_MySQL</a></p>
-                    <p>Recommended: <a href="http://php.net/json">JSON</a>, <a href="http://php.net/gmp">GMP</a>, <a href="http://php.net/zlib">Zlib</a>, <a href="http://php.net/intl.idn">IDN</a>, <a href="http://php.net/mbstring">mbstring</a>, <a href="http://php.net/iconv">iconv</a>, <a href="http://php.net/zip">Zip</a></p>
-                    <p>For whole modules list see <a href="https://github.com/FreshRSS/FreshRSS/blob/744a9e8cf00aef7dec0acfa5f90f0dcfa2ef8837/Docker/Dockerfile-Alpine#L7-L9">Dockerfile</a></p>
-                </td>
-                <td>
-                    <p>Database: <a href="http://php.net/pdo-sqlite">PDO_SQLite</a> or <a href="http://php.net/pdo-pgsql">PDO_PGSQL</a></p>
-                </td>
-            </tr>
-            <tr>
-                <td class="txtright">Database</td>
-                <td><strong>MySQL 5.7+</strong></td>
-                <td>older MySQL versions*: 5.6+, 5.5.3+<br/>other engines: SQLite 3.7.4+, PostgreSQL </td>
-            </tr>
-            <tr>
-                <td class="txtright">Web browser</td>
-                <td><strong>Firefox</strong></td>
-                <td>Chrome, Opera, Safari, Edge or IE 11+</td>
-            </tr>
-        </tbody>
-    </table>
-    <p>
-    *: be aware that open-source communities often don't provide long-term support for older versions.<br/>
-    This applies especially to PHP, which only offers support for the last three versions. Please consult <a href="https://www.php.net/supported-versions.php" target="_blank">its roadmap</a> for more details.</p>
+    <img class="site__screenshot" alt="A screenshot showing FreshRSS in action" src="images/screenshot.png" width="1000">
+
+    <div class="cols wrapper">
+        <div class="card card--highlight flow">
+            <h2 class="card__title">
+                Give it a try
+            </h2>
+
+            <p class="card__subtitle">
+                Not sure if it’s for you?
+            </p>
+
+            <p>
+                Try FreshRSS at <a href="https://demo.freshrss.org">demo.freshrss.org</a>,<br>
+                or sign up <a href="#">to an existing server</a>.
+            </p>
+
+            <img alt="" src="images/read.svg" width="125">
+        </div>
+
+        <div class="card card--highlight host flow">
+            <h2 class="card__title">
+                Host yourself
+            </h2>
+
+            <p class="card__subtitle">
+                Wonder about your data?
+            </p>
+
+            <p>
+                Start by <a href="https://github.com/FreshRSS/FreshRSS/releases/latest">downloading the code</a>
+                and follow <a href="https://github.com/FreshRSS/FreshRSS#installation">the instructions to install it</a>
+                on your server.
+            </p>
+
+            <img alt="" src="images/server.svg" width="100">
+        </div>
+    </div>
 </div>
 
-<div class="help-title row"><h1 id="help">Are you feeling a bit confused?</h1></div>
-<section class="help grid3">
-    <div class="mod">
-        <h2><a href="http://doc.freshrss.org/">Read the documentation</a></h2>
-        <a href="http://doc.freshrss.org/"><img width="150" height="150" src="images/doc.png" alt="documentation" /></a>
-        <p>The documentation is your best friend. I guess the answer you are searching is already in!<br />(still under construction)</p>
+<div class="wrapper-large edge-gap flow-small">
+    <h2 class="title">A powerful aggregator</h2>
+
+    <div class="cols">
+        <div class="card flow-small">
+            <h3 class="card__title">
+                Syndication
+            </h3>
+
+            <p>
+                Follow websites, podcasts and video channels in a single place.
+            </p>
+        </div>
+
+        <div class="card flow-small">
+            <h3 class="card__title">
+                Reader
+            </h3>
+
+            <p>
+                Read your articles directly in FreshRSS.
+            </p>
+        </div>
+
+        <div class="card flow-small">
+            <h3 class="card__title">
+                Search
+            </h3>
+
+            <p>
+                Search and save queries for quick access.
+            </p>
+        </div>
     </div>
-    <div class="mod">
-        <h2><a href="https://github.com/FreshRSS/FreshRSS/issues">Report a bug</a></h2>
-        <a href="https://github.com/FreshRSS/FreshRSS/issues"><img width="150" height="150" src="images/bug.png" alt="bug" /></a>
-        <p>Oh crap! FreshRSS has crashed? Maybe the bug is already known… or maybe not. Have a look at the bug tracker and do not hesitate to open a new issue.</p>
+
+    <div class="cols">
+        <div class="card flow-small">
+            <h3 class="card__title">
+                Web scraping
+            </h3>
+
+            <p>
+                Generate feeds by scraping external websites.
+            </p>
+        </div>
+
+        <div class="card flow-small">
+            <h3 class="card__title">
+                Feeds generation
+            </h3>
+
+            <p>
+                Generate new feeds based on your filters.
+            </p>
+        </div>
+
+        <div class="card flow-small">
+            <h3 class="card__title">
+                <abbr>OPML</abbr>
+            </h3>
+
+            <p>
+                Import and export your feeds with <abbr>OPML</abbr>.
+            </p>
+        </div>
     </div>
-    <div class="mod">
-        <h2><a href="https://framateam.org/signup_user_complete/?id=e2680d3e3128b9fac8fdb3003b0024ee">Join us on Framateam</a></h2>
-        <a href="https://framateam.org/signup_user_complete/?id=e2680d3e3128b9fac8fdb3003b0024ee"><img width="150" height="150" src="images/framateam.png" alt="join us" /></a>
-        <p>You did not find any answer? Or you do not want to create an account on GitHub? Don't hesitate to reach us on Framateam.</p>
+
+    <div class="cols">
+        <div class="card flow-small">
+            <h3 class="card__title">
+                WebSub
+            </h3>
+
+            <p>
+                Stay connected to your feeds in real-time.
+            </p>
+        </div>
+
+        <div class="card flow-small">
+            <h3 class="card__title">
+                Configurable
+            </h3>
+
+            <p>
+                Adapt to your needs thanks to a lot of options.
+            </p>
+        </div>
+
+        <div class="card flow-small">
+            <h3 class="card__title">
+                Mobile
+            </h3>
+
+            <p>
+                Follow your feeds with or without third-party application.
+            </p>
+        </div>
     </div>
-</section>
+
+    <div class="cols">
+        <div class="card flow-small">
+            <h3 class="card__title">
+                Fast &amp; efficient
+            </h3>
+
+            <p>
+                FreshRSS can manage +100k articles without complaining.
+            </p>
+        </div>
+
+        <div class="card flow-small">
+            <h3 class="card__title">
+                Themes &amp; extensions
+            </h3>
+
+            <p>
+                Customize FreshRSS with themes and <a href="https://github.com/FreshRSS/Extensions/">extensions</a>.
+            </p>
+        </div>
+
+        <div class="card flow-small">
+            <h3 class="card__title">
+                International
+            </h3>
+
+            <p>
+                FreshRSS is translated in more than 15 languages.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="site__block community">
+    <div class="wrapper-large edge-gap flow-large">
+        <h2 class="title">
+            Join the community
+        </h2>
+
+        <p class="text-featured wrapper-text">
+            FreshRSS is a free software (<a href="https://github.com/FreshRSS/FreshRSS/blob/edge/LICENSE.txt">AGPL 3</a>) and community-friendly.<br>
+            Help us to make it better.
+        </p>
+
+        <ol class="text-featured flow-small">
+            <li>
+                <a href="https://github.com/FreshRSS/FreshRSS/blob/edge/CONTRIBUTING.md">Read the guide</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact us</a>
+            </li>
+            <li>
+                <a href="https://github.com/FreshRSS/FreshRSS/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22">Contribute</a>
+            </li>
+            <li>
+                <a href="https://github.com/FreshRSS/FreshRSS/blob/edge/CREDITS.md">Be credited</a>
+            </li>
+        </ol>
+    </div>
+</div>
+
+<div class="site__testimonials wrapper-large edge-gap flow-large">
+    <h2 class="title">Testimonials</h2>
+
+    <div class="cols">
+        <figure class="flow-small">
+            <blockquote>
+                <p>“The best aggregator”</p>
+            </blockquote>
+
+            <figcaption><a href="#">anonymous</a></figcaption>
+        </figure>
+
+        <figure class="flow-small">
+            <blockquote>
+                <p>“The best aggregator”</p>
+            </blockquote>
+
+            <figcaption><a href="#">anonymous</a></figcaption>
+        </figure>
+
+        <figure class="flow-small">
+            <blockquote>
+                <p>“The best aggregator”</p>
+            </blockquote>
+
+            <figcaption><a href="#">anonymous</a></figcaption>
+        </figure>
+    </div>
+
+    <p>
+        <strong>
+            <a href="#">→ Read more testimonials</a>
+        </strong>
+    </p>
+</div>

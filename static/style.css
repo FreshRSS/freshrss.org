@@ -1,0 +1,368 @@
+:root {
+    /* Colors come from https://www.radix-ui.com/colors */
+    --color-primary1: hsl(206, 100%, 99.2%);
+    --color-primary2: hsl(210, 100%, 98.0%);
+    --color-primary3: hsl(209, 100%, 96.5%);
+    --color-primary4: hsl(210, 98.8%, 94.0%);
+    --color-primary5: hsl(209, 95.0%, 90.1%);
+    --color-primary6: hsl(209, 81.2%, 84.5%);
+    --color-primary7: hsl(208, 77.5%, 76.9%);
+    --color-primary8: hsl(206, 81.9%, 65.3%);
+    --color-primary9: hsl(206, 100%, 50.0%);
+    --color-primary10: hsl(208, 100%, 47.3%);
+    --color-primary11: hsl(211, 100%, 43.2%);
+    --color-primary12: hsl(211, 100%, 15.0%);
+}
+
+/* open-sans-regular - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(''),
+       url('fonts/open-sans-v34-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('fonts/open-sans-v34-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* open-sans-700 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local(''),
+       url('fonts/open-sans-v34-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('fonts/open-sans-v34-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* pt-serif-regular - latin */
+@font-face {
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(''),
+       url('fonts/pt-serif-v17-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('fonts/pt-serif-v17-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* pt-serif-700 - latin */
+@font-face {
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local(''),
+       url('fonts/pt-serif-v17-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('fonts/pt-serif-v17-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+    line-height: 1.4;
+
+    scroll-behavior: smooth;
+}
+
+@media (min-width: 600px) {
+    html {
+        font-size: 22px;
+        line-height: 1.5;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 2rem 0;
+
+    color: var(--color-primary12);
+    font-family: 'PT Serif', serif;
+
+    background: var(--color-primary3);
+}
+
+:focus {
+    outline: 3px solid var(--color-primary7);
+}
+
+.sr-only {
+    position: absolute;
+
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+
+    width: 1px;
+    height: 1px;
+}
+
+img {
+    max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1, h2 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    color: var(--color-primary11);
+}
+
+/**
+ * Site layout
+ */
+.site__header {
+    text-align: center;
+}
+
+.site__header a {
+    display: block;
+}
+
+.site__title {
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+
+    color: var(--color-primary11);
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.site__block {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    background-color: var(--color-primary1);
+    border-top: 5px solid var(--color-primary9);
+}
+
+.site__block.community {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    color: var(--color-primary1);
+
+    background-image: url('images/community.svg');
+    background-color: var(--color-primary12);
+    background-position: center 101%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media (min-width: 600px) {
+    .site__block.community {
+        background-size: initial;
+    }
+}
+
+.site__block.community a {
+    color: var(--color-primary1);
+}
+
+.site__intro {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.site__screenshot {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+.site__testimonials {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    text-align: center;
+}
+
+.site__footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    background-color: var(--color-primary1);
+    border-top: 5px solid var(--color-primary9);
+
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.site__footer > ul {
+    padding-left: 0;
+
+    list-style: none;
+}
+
+.ten-years {
+    padding: 1rem;
+
+    background-color: var(--color-primary4);
+    border-radius: 10px;
+}
+
+.ten-years a {
+    font-style: italic;
+}
+
+/**
+ * Components
+ */
+.card {
+    padding: 1rem;
+
+    text-align: center;
+
+    border-radius: 10px;
+}
+
+.card--highlight {
+    background-color: var(--color-primary3);
+}
+
+.card__title {
+    font-size: 1.2rem;
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card__subtitle {
+    color: var(--color-primary11);
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.title {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+figure {
+    margin: 0;
+}
+
+blockquote {
+    margin: 0 1rem;
+
+    font-style: italic;
+}
+
+blockquote + figcaption {
+    margin-left: 1rem;
+}
+
+blockquote + figcaption::before {
+    content: '— ';
+}
+
+/**
+ * Utilities
+ */
+.cols {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.cols > * {
+    flex: 1;
+}
+
+.cols > * + * {
+    margin-top: 1rem;
+}
+
+@media (min-width: 600px) {
+    .cols {
+        flex-direction: row;
+    }
+
+    .cols > * + * {
+        margin-top: 0;
+        margin-left: 1rem;
+    }
+}
+
+.edge-gap {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+@media (min-width: 600px) {
+    .edge-gap {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+}
+
+.flow-small > * + * {
+    margin-top: 0.5rem;
+}
+
+.flow > * + * {
+    margin-top: 1rem;
+}
+
+.flow-large > * + * {
+    margin-top: 2rem;
+}
+
+.flow-larger > * + * {
+    margin-top: 3rem;
+}
+
+.wrapper-small {
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.wrapper-large {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.wrapper-text {
+    max-width: 55ch;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.text-featured {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
+}

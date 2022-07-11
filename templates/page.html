@@ -6,10 +6,10 @@
         <link rel="canonical" href="{{ SITE_URL }}{{ PAGE_SLUG }}.html">
         <link href="https://github.com/FreshRSS/FreshRSS/releases.atom" type="application/atom+xml" rel="alternate" title="FreshRSS Releases" />
 
-        <link rel="stylesheet" href="{{ SITE_URL }}/style.css" />
+        <link rel="stylesheet" href="{{ SITE_URL }}style.css" />
 
         {% if 'PAGE_TITLE' in globals() %}
-            <title>{{ PAGE_TITLE }} – {{ SITE_TITLE }}</title>
+            <title>{{ PAGE_TITLE }} · {{ SITE_TITLE }}</title>
             <meta property="og:title" content="{{ PAGE_TITLE }}" />
         {% else %}
             <title>FreshRSS, a free, self-hostable feeds aggregator</title>
@@ -33,7 +33,59 @@
         <meta name="twitter:card" content="summary">
     </head>
 
-    <body>
-        {{ PAGE_CONTENT }}
+    <body class="flow-larger">
+        <header class="site__header wrapper-small edge-gap flow">
+            <a href="{{ SITE_URL }}index.html">
+                <img alt="FreshRSS" src="{{ SITE_URL }}images/logo.png" width="500">
+            </a>
+
+            <h1 class="site__title">
+                {% if 'PAGE_TITLE' in globals() %}
+                    {{ PAGE_TITLE }}
+                {% else %}
+                    A free, self-hostable feed aggregator.
+                {% endif %}
+            </h1>
+        </header>
+
+        <main class="flow-larger">
+            {{ PAGE_CONTENT }}
+        </main>
+
+        <footer class="site__footer wrapper-large edge-gap cols">
+            <p>
+                <img alt="FreshRSS" src="{{ SITE_URL }}images/icon.svg" width="200">
+            </p>
+
+            <ul class="flow-small">
+                <li><a href="https://github.com/FreshRSS">GitHub</a></li>
+                <li><a href="https://framateam.org/freshrss/channels/town-square?id=e2680d3e3128b9fac8fdb3003b0024ee">Framateam</a></li>
+                <li><a href="https://freshrss.github.io/FreshRSS/">Documentation</a></li>
+                <li><a href="#">List of instances</a></li>
+                <li><a href="#">Legal</a></li>
+            </ul>
+
+            <div class="flow">
+                <p>
+                    Sponsor us on <a href="https://liberapay.com/FreshRSS/">Liberapay</a>.
+                </p>
+
+                <p>
+                    Find us on <a href="https://twitter.com/FreshRSS">Twitter</a>.
+                </p>
+
+                <p>
+                    <a href="https://alternativeto.net/software/FreshRSS/about/">
+                        Vote for us on AlternativeTo
+                    </a>
+
+                    <br />
+
+                    <small>
+                        or find alternatives if FreshRSS does not meet your expectations.
+                    </small>
+                </p>
+            </div>
+        </footer>
     </body>
 </html>
