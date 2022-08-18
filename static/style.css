@@ -299,6 +299,14 @@ blockquote + figcaption::before {
         flex-direction: row;
     }
 
+    .cols--wrap {
+        flex-wrap: wrap;
+    }
+
+    .cols--wrap > * {
+        flex-basis: 30%;
+    }
+
     .cols > * + * {
         margin-top: 0;
         margin-left: 1rem;
@@ -365,4 +373,9 @@ blockquote + figcaption::before {
 
 .text-center {
     text-align: center;
+}
+
+.text-secondary {
+    font-size: 0.9rem;
+    font-style: italic;
 }
