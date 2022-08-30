@@ -2,6 +2,9 @@
 
 LOCALE=en_GB.utf8
 
+# SERVER_DEST is defined in a `.env` file and follow this format: user@server.url:/path/to/website
+include .env
+
 .PHONY: build
 build: ## Build the website with Boop! generator
 	env LC_ALL=$(LOCALE) boop.py --development
@@ -13,6 +16,12 @@ clean: ## Clean site files
 .PHONY: open
 open: build  ## Open the built site in a web browser
 	xdg-open _site/index.html
+
+.PHONY: publish
+publish: clean  ## Publish the website online (rsync)
+	env LC_ALL=$(LOCALE) boop.py
+	rsync -P -rvzc --cvs-exclude --delete ./_site/ $(SERVER_DEST)
+	rm -rf ./_cache
 
 .PHONY: tree
 tree:  ## Display the structure of the website
