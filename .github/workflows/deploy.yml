@@ -1,0 +1,49 @@
+name: Deploy freshrss.org
+
+on:
+  push:
+    branches:
+      - new-website
+
+jobs:
+  deploy:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v2
+
+      - name: Install Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Setup locale
+        run: |
+          sudo apt-get install locales
+          sudo locale-gen en_GB.utf8
+
+      - name: Install Boop!
+        run: |
+          git clone https://framagit.org/marienfressinaud/boop.git boop
+          pip install -r boop/requirements.txt
+          echo "$(pwd)/boop" >> $GITHUB_PATH
+
+      - name: Install SSH key
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          name: id_ed25519
+          known_hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
+          config: |
+            Host freshrss
+            HostName freshrss.org
+            Port ${{ secrets.SSH_PORT }}
+            IdentityFile ~/.ssh/id_ed25519
+            IdentitiesOnly yes
+
+      - name: Configure the environment
+        run: echo SERVER_DEST=${{ secrets.SERVER_DEST }} > .env
+
+      - name: Build and publish the blog
+        run: make publish
