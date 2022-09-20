@@ -269,14 +269,6 @@ blockquote {
     font-style: italic;
 }
 
-blockquote + figcaption {
-    margin-left: 1rem;
-}
-
-blockquote + figcaption::before {
-    content: '— ';
-}
-
 /**
  * Utilities
  */
