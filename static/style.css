@@ -134,6 +134,19 @@ a {
 
 .site__header a {
     display: block;
+    padding: 0.25rem;
+}
+
+.site__header img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (max-width: 600px) {
+    .site__header img {
+        max-width: 75%;
+    }
 }
 
 .site__title {
@@ -142,7 +155,7 @@ a {
     margin-left: auto;
 
     color: var(--color-primary11);
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: bold;
     font-style: italic;
 }
