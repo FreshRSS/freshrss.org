@@ -3,7 +3,7 @@ name: Deploy freshrss.org
 on:
   push:
     branches:
-      - new-website
+      - main
 
 jobs:
   deploy:
