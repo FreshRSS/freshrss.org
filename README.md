@@ -2,41 +2,46 @@
 
 Content files for [freshrss.org](http://freshrss.org) website.
 
-freshrss.org uses [Pelican](http://getpelican.com/) as static site generator.
-It is a powerful Python software which generates HTML from Markdown or
-reStructuredText formats.
+This repository contains content (in HTML and Markdown), configuration,
+templates and a Makefile to help to build the website.
 
-This repository contains content (in Markdown), configuration and a Dockerfile
-to help to build the website.
+Some old blog posts are written in Markdown under the `articles/` directory.
 
-Actually, there is one specific file: `./content/pages/index.html`. Yes, it is
-HTML (and not Markdown). It is the home page content of freshrss.org.
+freshrss.org uses [boop!](https://framagit.org/marienfressinaud/boop) a simple
+static site generator.
 
-Blog posts are written in Markdown under the `./content/blog` directory.
+This documentation is intended to people who wants to contribute to the code of
+[freshrss.org](https://freshrss.org). If you’re looking for more generic
+instructions on how to contribute to FreshRSS, please [take a look at our
+dedicated document](https://github.com/FreshRSS/FreshRSS/blob/edge/CONTRIBUTING.md#how-to-contribute-to-freshrss).
 
-## Installation
+## Get started
 
-We assume in this section you have Docker installed on your system.
+First, follow the instructions [to install boop!](https://framagit.org/marienfressinaud/boop#installation).
+It is pretty straightforward and it has very few dependencies.
 
-If you want to (an image is provided on the Docker registry), you can build the
-image with:
+Generate the website under a `_site/` directory with:
 
 ```console
-$ docker build -t freshrss/freshrss-org .
+$ make build
 ```
 
-And generate the output with:
+You can then open the `_site/index.html` file in a browser, or execute this
+command:
 
 ```console
-$ mkdir output
-$ docker run --rm -v "$PWD/output:/pelican/output" --user $(id -u):$(id -g) freshrss/freshrss-org
+$ make open
 ```
 
-You should now see HTML files under `./output` directory that you can upload
-on a server. The website is generated with the `https://freshrss.org` URL by
-default. You can override this value by setting the `SITEURL` environment
-variable:
+The built pages and articles are cached under a `_cache/` directory. It is
+possible to clean the building environment with:
 
 ```console
-$ docker run --rm -v "$PWD/output:/pelican/output" --user $(id -u):$(id -g) -e "SITEURL=http://127.0.0.1:8080" freshrss/freshrss-org
+$ make clean
+```
+
+To get a glimpse of the existing source files, execute:
+
+```console
+$ make tree
 ```
