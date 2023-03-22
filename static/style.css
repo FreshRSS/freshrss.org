@@ -191,6 +191,12 @@ a {
     color: var(--color-primary1);
 }
 
+.site__block.community ol {
+    padding-left: 0;
+
+    list-style-position: inside;
+}
+
 .site__intro {
     padding-top: 2rem;
     padding-bottom: 2rem;
