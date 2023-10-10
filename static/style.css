@@ -325,6 +325,13 @@ blockquote {
     }
 }
 
+.grid {
+    display: grid;
+
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+}
+
 .edge-gap {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
