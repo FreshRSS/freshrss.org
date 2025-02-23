@@ -10,7 +10,15 @@ description: FreshRSS is lightweight, easy to work with, powerful, and customiza
         </p>
     </div>
 
-    <img class="site__screenshot" alt="A screenshot showing FreshRSS in action" src="images/screenshot.webp" width="1000" height="563" />
+    <div class="image-comparison-slider">
+        <div class="slider-wrapper">
+            <img class="comparison-image" alt="Light theme screenshot of FreshRSS" src="images/screenshot.webp" />
+            <img class="comparison-image overlay" alt="Dark theme screenshot of FreshRSS" src="images/dark-screenshort.webp" />
+        </div>
+        <label for="theme-slider" class="sr-only">Select the percentage of the left image to display</label>
+        <input id="theme-slider" type="range" class="slider-handle" min="0" max="100" value="50">
+        <div class="slider-line"></div>
+    </div>
 
     <div class="cols wrapper">
         <div class="card card--highlight flow">

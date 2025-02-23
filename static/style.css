@@ -1,61 +1,61 @@
 :root {
     /* Colors come from https://www.radix-ui.com/colors */
     --color-primary1: hsl(206, 100%, 99.2%);
-    --color-primary2: hsl(210, 100%, 98.0%);
+    --color-primary2: hsl(210, 100%, 98%);
     --color-primary3: hsl(209, 100%, 96.5%);
-    --color-primary4: hsl(210, 98.8%, 94.0%);
-    --color-primary5: hsl(209, 95.0%, 90.1%);
+    --color-primary4: hsl(210, 98.8%, 94%);
+    --color-primary5: hsl(209, 95%, 90.1%);
     --color-primary6: hsl(209, 81.2%, 84.5%);
     --color-primary7: hsl(208, 77.5%, 76.9%);
     --color-primary8: hsl(206, 81.9%, 65.3%);
-    --color-primary9: hsl(206, 100%, 50.0%);
+    --color-primary9: hsl(206, 100%, 50%);
     --color-primary10: hsl(208, 100%, 47.3%);
     --color-primary11: hsl(211, 100%, 43.2%);
-    --color-primary12: hsl(211, 100%, 15.0%);
+    --color-primary12: hsl(211, 100%, 15%);
 }
 
 /* open-sans-regular - latin */
 @font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local(''),
-       url('fonts/open-sans-v34-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('fonts/open-sans-v34-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local(""),
+         url("fonts/open-sans-v34-latin-regular.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url("fonts/open-sans-v34-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* open-sans-700 - latin */
 @font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: local(''),
-       url('fonts/open-sans-v34-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('fonts/open-sans-v34-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local(""),
+         url("fonts/open-sans-v34-latin-700.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url("fonts/open-sans-v34-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* pt-serif-regular - latin */
 @font-face {
-  font-family: 'PT Serif';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local(''),
-       url('fonts/pt-serif-v17-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('fonts/pt-serif-v17-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-family: "PT Serif";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local(""),
+         url("fonts/pt-serif-v17-latin-regular.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url("fonts/pt-serif-v17-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* pt-serif-700 - latin */
 @font-face {
-  font-family: 'PT Serif';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: local(''),
-       url('fonts/pt-serif-v17-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('fonts/pt-serif-v17-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-family: "PT Serif";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local(""),
+         url("fonts/pt-serif-v17-latin-700.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url("fonts/pt-serif-v17-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 *,
@@ -83,7 +83,7 @@ body {
     padding: 2rem 0;
 
     color: var(--color-primary12);
-    font-family: 'PT Serif', serif;
+    font-family: "PT Serif", serif;
 
     background: var(--color-primary3);
 }
@@ -117,8 +117,9 @@ ol {
     margin-bottom: 0;
 }
 
-h1, h2 {
-    font-family: 'Open Sans', sans-serif;
+h1,
+h2 {
+    font-family: "Open Sans", sans-serif;
 }
 
 a {
@@ -174,7 +175,7 @@ a {
 
     color: var(--color-primary1);
 
-    background-image: url('images/community.svg');
+    background-image: url("images/community.svg");
     background-color: var(--color-primary12);
     background-position: center 101%;
     background-repeat: no-repeat;
@@ -263,7 +264,7 @@ a {
 
 .card__title {
     font-size: 1.2rem;
-    font-family: 'PT Serif', serif;
+    font-family: "PT Serif", serif;
     font-weight: bold;
     text-align: center;
 }
@@ -449,4 +450,100 @@ blockquote {
 #scroll-to-top.hidden button {
     opacity: 0;
     visibility: hidden;
+}
+
+/* slider images */
+.image-comparison-slider {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+.slider-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.comparison-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.comparison-image.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+}
+
+.slider-handle {
+    position: absolute;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    top: 0;
+    left: 0;
+    margin: 0;
+    cursor: col-resize;
+}
+
+.slider-handle::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 100%;
+    width: 2px;
+    background: transparent;
+    cursor: col-resize;
+}
+
+.slider-handle::-moz-range-thumb {
+    height: 100%;
+    width: 2px;
+    background: transparent;
+    cursor: col-resize;
+    border: none;
+}
+
+.slider-line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: var(--color-primary1);
+    pointer-events: none;
+    transform: translateX(-50%);
+}
+
+.slider-line::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background: var(--color-primary5);
+    border-radius: 50%;
+}
+
+.slider-line::before {
+    content: "↔";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-primary12);
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 2;
 }
