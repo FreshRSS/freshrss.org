@@ -529,7 +529,7 @@ blockquote {
 	transform: translate(-50%, -50%);
 	width: 40px;
 	height: 40px;
-	background: var(--color-primary1);
+	background: var(--color-primary5);
 	border-radius: 50%;
 }
 
