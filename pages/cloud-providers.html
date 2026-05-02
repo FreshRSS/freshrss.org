@@ -7,19 +7,45 @@ description: You could be using FreshRSS in a few minutes.
     <div class="site__intro text-featured wrapper-text">
         <p>
             <strong>You could be using FreshRSS in a few minutes.</strong><br>
-            The community proposes ready-to-go servers.
+            Pick a public instance to share with other users, or a dedicated
+            managed instance just for you.
         </p>
     </div>
 
+    <!--
+        Maintainer notes:
+        - Cards are sorted alphabetically within each section in the source.
+          `card--full` (closed) cards are auto-reordered to the end of their
+          section by CSS, so source order can stay alphabetical.
+        - To mark an instance as closed to new registrations, add the
+          `card--full` class to its `<div class="card ...">`. Remove the
+          class when registrations reopen. If an instance disappears
+          entirely, remove its card.
+        - To mark an instance as supporting FreshRSS financially (e.g. a
+          revenue share or kickback agreement), add the `card--kickback`
+          class. A "Supports FreshRSS" badge is shown next to the card
+          title. Remove the class if the arrangement ends.
+        - The two classes can be combined on the same card.
+        - Country, pricing and instance type live in the
+          `<p class="text-secondary">` line so users can scan quickly.
+    -->
+
+    <h2 id="public-instances" class="title">Public instances</h2>
+
+    <p class="text-featured wrapper-text">
+        Shared servers run by community members. Create an account and start
+        reading.
+    </p>
+
     <div class="grid">
 
-        <div class="card flow-small">
+        <div class="card card--full flow-small">
             <div class="card__title">
                 Chère de Prince
             </div>
 
             <p class="text-secondary">
-                French, free
+                France ⋅ Free
             </p>
 
             <p>
@@ -34,8 +60,7 @@ description: You could be using FreshRSS in a few minutes.
             </div>
 
             <p class="text-secondary">
-	        With modern speech synthesizer PiperTTS on high settings.<br>
-	        30 days trial, 20&nbsp;£&nbsp;/&nbsp;year. Ask for a free account if you do public interest work.
+                £20&nbsp;/&nbsp;year (30-day trial; free for public-interest work) ⋅ With PiperTTS speech synthesis
             </p>
 
             <p>
@@ -52,7 +77,7 @@ description: You could be using FreshRSS in a few minutes.
             </div>
 
             <p class="text-secondary">
-                Quebec, pay what you want
+                Quebec, Canada ⋅ Pay what you want
             </p>
 
             <p>
@@ -67,7 +92,7 @@ description: You could be using FreshRSS in a few minutes.
             </div>
 
             <p class="text-secondary">
-                French, pay what you want
+                France ⋅ Free
             </p>
 
             <p>
@@ -76,13 +101,13 @@ description: You could be using FreshRSS in a few minutes.
             </p>
         </div>
 
-        <div class="card flow-small">
+        <div class="card card--full flow-small">
             <div class="card__title">
                 Prodottoinrete Group SRL
             </div>
 
             <p class="text-secondary">
-                Italian, free
+                Italy ⋅ Free
             </p>
 
             <p>
@@ -97,7 +122,7 @@ description: You could be using FreshRSS in a few minutes.
             </div>
 
             <p class="text-secondary">
-                French, pay what you want
+                France ⋅ Pay what you want, on request
             </p>
 
             <p>
@@ -108,11 +133,41 @@ description: You could be using FreshRSS in a few minutes.
 
         <div class="card flow-small">
             <div class="card__title">
+                Websitemachine
+            </div>
+
+            <p class="text-secondary">
+                Netherlands ⋅ Free
+            </p>
+
+            <p>
+                <strong><a href="https://www.websitemachine.nl/">websitemachine.nl</a></strong>
+                <small> ⋅ <a href="https://reader.websitemachine.nl/">FreshRSS</a></small>
+            </p>
+        </div>
+
+        <div class="card flow-small">
+            <div class="card__title">
+                WoodPeckersNest (WPN)
+            </div>
+
+            <p class="text-secondary">
+                Italy ⋅ Free
+            </p>
+
+            <p>
+                <strong><a href="https://woodpeckersnest.space/">woodpeckersnest.space</a></strong>
+                <small> ⋅ <a href="https://rss.woodpeckersnest.space/">FreshRSS</a></small>
+            </p>
+        </div>
+
+        <div class="card flow-small">
+            <div class="card__title">
                 Zaclys
             </div>
 
             <p class="text-secondary">
-                French, 10&nbsp;€&nbsp;/&nbsp;year
+                France ⋅ 10&nbsp;€&nbsp;/&nbsp;year
             </p>
 
             <p>
@@ -121,52 +176,94 @@ description: You could be using FreshRSS in a few minutes.
             </p>
         </div>
 
-          <div class="card flow-small">
-            <div class="card__title">
-              Websitemachine
-            </div>
+    </div>
 
-            <p class="text-secondary">
-              English / Dutch, Free.
-            </p>
+    <h2 id="dedicated-managed" class="title">Dedicated managed hosting</h2>
 
-            <p>
-              <strong><a href="https://www.websitemachine.nl/">Websitemachine</a></strong>
-              <small> ⋅ <a href="https://reader.websitemachine.nl/">FreshRSS</a></small>
-            </p>
-          </div>
+    <p class="text-featured wrapper-text">
+        Pay-as-you-go services that run a FreshRSS instance just for you. No
+        server admin required.
+    </p>
+
+    <div class="grid">
 
         <div class="card flow-small">
             <div class="card__title">
-                WoodPeckersNest (WPN)
+                ClawCloud Run
             </div>
 
             <p class="text-secondary">
-                English / Italian, Free.
+                Tiered pricing
             </p>
 
             <p>
-                <strong><a href="https://woodpeckersnest.space/">wpn</a></strong>
-                <small> ⋅ <a href="https://rss.woodpeckersnest.space/">FreshRSS</a></small>
+                <strong><a href="https://run.claw.cloud/">run.claw.cloud</a></strong>
+                <small> ⋅ <a href="https://template.run.claw.cloud/?openapp=system-fastdeploy%3FtemplateName%3Dfreshrss">Deploy FreshRSS</a></small>
             </p>
         </div>
 
-	  <div class="card flow-small">
+        <div class="card flow-small">
             <div class="card__title">
-              CloudBreak
+                CloudBreak
             </div>
 
             <p class="text-secondary">
-              English, <a href="https://cloudbreak.app/freshrss/">competitive pricing</a>
+                United States and Canada only ⋅ <a href="https://cloudbreak.app/freshrss/">$36&nbsp;/&nbsp;year</a>
             </p>
 
             <p>
-              <strong><a href="https://cloudbreak.app">cloudbreak.app</a></strong>
-              <small> ⋅ <a href="https://spacebarlabs.com/privacy-policy/">PP</a></small>
-              <small> ⋅ <a href="https://spacebarlabs.com/terms-of-service/">ToS</a></small>
-              <small> ⋅ <a href="https://cloudbreak.app/freshrss/">FreshRSS</a></small>
+                <strong><a href="https://cloudbreak.app">cloudbreak.app</a></strong>
+                <small> ⋅ <a href="https://spacebarlabs.com/privacy-policy/">PP</a></small>
+                <small> ⋅ <a href="https://spacebarlabs.com/terms-of-service/">ToS</a></small>
+                <small> ⋅ <a href="https://cloudbreak.app/freshrss/">FreshRSS</a></small>
             </p>
-         </div>
+        </div>
+
+        <div class="card flow-small">
+            <div class="card__title">
+                Elestio
+            </div>
+
+            <p class="text-secondary">
+                20 countries ⋅ from $14&nbsp;/&nbsp;month
+            </p>
+
+            <p>
+                <strong><a href="https://elest.io/">elest.io</a></strong>
+                <small> ⋅ <a href="https://elest.io/open-source/freshrss">FreshRSS</a></small>
+            </p>
+        </div>
+
+        <div class="card flow-small">
+            <div class="card__title">
+                PikaPods
+            </div>
+
+            <p class="text-secondary">
+                European Union and United States ⋅ from $1.20&nbsp;/&nbsp;month
+            </p>
+
+            <p>
+                <strong><a href="https://www.pikapods.com/">pikapods.com</a></strong>
+                <small> ⋅ <a href="https://www.pikapods.com/pods?run=freshrss">Deploy FreshRSS</a></small>
+            </p>
+        </div>
+
+        <div class="card flow-small">
+            <div class="card__title">
+                Zeabur
+            </div>
+
+            <p class="text-secondary">
+                Tiered pricing
+            </p>
+
+            <p>
+                <strong><a href="https://zeabur.com/">zeabur.com</a></strong>
+                <small> ⋅ <a href="https://zeabur.com/templates/MD4TRW">Deploy FreshRSS</a></small>
+            </p>
+        </div>
+
     </div>
 
     <p class="text-featured">
