@@ -14,13 +14,13 @@ description: You could be using FreshRSS in a few minutes.
 
     <!--
         Maintainer notes:
-        - Cards are sorted alphabetically within each section, with
-          `card--full` (closed) cards moved to the end of their section.
+        - Cards are sorted alphabetically within each section in the source.
+          `card--full` (closed) cards are auto-reordered to the end of their
+          section by CSS, so source order can stay alphabetical.
         - To mark an instance as closed to new registrations, add the
-          `card--full` class to its `<div class="card ...">` and move it
-          below the open cards. Remove the class and re-sort when
-          registrations reopen. If an instance disappears entirely, remove
-          its card.
+          `card--full` class to its `<div class="card ...">`. Remove the
+          class when registrations reopen. If an instance disappears
+          entirely, remove its card.
         - To mark an instance as supporting FreshRSS financially (e.g. a
           revenue share or kickback agreement), add the `card--kickback`
           class. A "Supports FreshRSS" badge is shown next to the card
@@ -38,6 +38,21 @@ description: You could be using FreshRSS in a few minutes.
     </p>
 
     <div class="grid">
+
+        <div class="card card--full flow-small">
+            <div class="card__title">
+                Chère de Prince
+            </div>
+
+            <p class="text-secondary">
+                France ⋅ Free
+            </p>
+
+            <p>
+                <strong><a href="https://cheredeprince.net/">cheredeprince.net</a></strong>
+                <small> ⋅ <a href="https://rss.cheredeprince.net/">FreshRSS</a></small>
+            </p>
+        </div>
 
         <div class="card flow-small">
             <div class="card__title">
@@ -83,6 +98,21 @@ description: You could be using FreshRSS in a few minutes.
             <p>
                 <strong><a href="https://hostux.network/">hostux.network</a></strong>
                 <small> ⋅ <a href="https://rss.hostux.net/">FreshRSS</a></small>
+            </p>
+        </div>
+
+        <div class="card card--full flow-small">
+            <div class="card__title">
+                Prodottoinrete Group SRL
+            </div>
+
+            <p class="text-secondary">
+                Italy ⋅ Free
+            </p>
+
+            <p>
+                <strong><a href="https://prodottoinrete.com/">prodottoinrete.com</a></strong>
+                <small> ⋅ <a href="https://freshrss.prodottoinrete.com/">FreshRSS</a></small>
             </p>
         </div>
 
@@ -143,36 +173,6 @@ description: You could be using FreshRSS in a few minutes.
             <p>
                 <strong><a href="https://www.zaclys.com/">zaclys.com</a></strong>
                 <small> ⋅ <a href="https://www.zaclys.com/flux/">FreshRSS</a></small>
-            </p>
-        </div>
-
-        <div class="card card--full flow-small">
-            <div class="card__title">
-                Chère de Prince
-            </div>
-
-            <p class="text-secondary">
-                France ⋅ Free
-            </p>
-
-            <p>
-                <strong><a href="https://cheredeprince.net/">cheredeprince.net</a></strong>
-                <small> ⋅ <a href="https://rss.cheredeprince.net/">FreshRSS</a></small>
-            </p>
-        </div>
-
-        <div class="card card--full flow-small">
-            <div class="card__title">
-                Prodottoinrete Group SRL
-            </div>
-
-            <p class="text-secondary">
-                Italy ⋅ Free
-            </p>
-
-            <p>
-                <strong><a href="https://prodottoinrete.com/">prodottoinrete.com</a></strong>
-                <small> ⋅ <a href="https://freshrss.prodottoinrete.com/">FreshRSS</a></small>
             </p>
         </div>
 
