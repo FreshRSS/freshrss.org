@@ -262,6 +262,46 @@ a {
     background-color: var(--color-primary3);
 }
 
+.card--full {
+    opacity: 0.55;
+}
+
+.card--full .card__title::after {
+    display: inline-block;
+    margin-left: 0.5rem;
+    padding: 0.1rem 0.4rem;
+
+    content: "Registrations closed";
+
+    color: var(--color-primary1);
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.7rem;
+    font-style: normal;
+    font-weight: normal;
+    vertical-align: middle;
+
+    background-color: var(--color-primary11);
+    border-radius: 0.25rem;
+}
+
+.card--kickback .card__title::before {
+    display: inline-block;
+    margin-right: 0.5rem;
+    padding: 0.1rem 0.4rem;
+
+    content: "Supports FreshRSS";
+
+    color: var(--color-primary1);
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.7rem;
+    font-style: normal;
+    font-weight: normal;
+    vertical-align: middle;
+
+    background-color: var(--color-primary9);
+    border-radius: 0.25rem;
+}
+
 .card__title {
     font-size: 1.2rem;
     font-family: "PT Serif", serif;
